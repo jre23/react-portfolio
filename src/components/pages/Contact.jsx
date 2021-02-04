@@ -9,15 +9,25 @@ const Contact = () => {
   })
 
   useEffect(() => {
-    API.search(gifState.gif).then(res => {
-      // use Math.random() to choose a random gif
-      let randomIndex = Math.floor(Math.random() * 23);
-      let imageURL = res.data.data[randomIndex].images.fixed_height.url;
-      setGifState({ ...gifState, image: imageURL })
-    }).catch((e) => {
-      console.log(e)
-    });
+    const giphyAPI = () => {
+      console.log("=====test giphy=====");
+      API.search(gifState.gif).then(res => {
+        // use Math.random() to choose a random gif
+        let randomIndex = Math.floor(Math.random() * 23);
+        let imageURL = res.data.data[randomIndex].images.fixed_height.url;
+        setGifState({ gif: gifState.gif, image: imageURL })
+      }).catch((e) => {
+        console.log(e)
+      });
+    };
+    giphyAPI();
   }, [gifState.gif]);
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    let dataValue = event.target.getAttribute("data-target");
+    setGifState({ ...gifState, gif: dataValue });
+  }
 
   return (
     <>
@@ -57,8 +67,8 @@ const Contact = () => {
                 </div>
               </div>
               <div className="pb-4">
-                <button type="submit" className="btn btn-sm py-2 px-2 submit-btn" data-target="Thanks">Submit
-                    </button>
+                <button onClick={handleSubmit} type="submit" className="btn btn-sm py-2 px-2 submit-btn" data-target="Thanks">Submit
+                </button>
               </div>
             </form>
           </section>
