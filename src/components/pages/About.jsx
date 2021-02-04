@@ -23,8 +23,8 @@ const About = () => {
             jQuery, querying
             APIs,
             floating
-            and clearing images, utilizing Google Fonts, using a MySQL database to store and retrieve data,
-                    utilizing Handlebars.js to generate HTML, and deploying to Heroku.</p>
+            and clearing images, utilizing Google Fonts, using MySQL with Sequelize and MongoDB with Mongoosejs to store and retrieve data,
+                    utilizing Handlebars.js to generate HTML, deploying to Heroku, Progressive Web Applications, and React.</p>
 
             <p className="clear">Some of my favorite hobbies include: Eating ice cream, running, lifting weights,
             playing video games, and hanging
@@ -38,9 +38,9 @@ const About = () => {
           {/* <!-- links to linkedin, github, and resume  --> */}
           <div className="col-12 col-md-7 col-lg-8 pt-4 pl-4 pr-4 about-me">
             <ul>
-              <li><a href="https://www.linkedin.com/in/joelestrada23" target="_blank">LinkedIn</a></li>
-              <li><a href="https://github.com/jre23" target="_blank">GitHub</a></li>
-              <li><a href="./assets/images/Joel's_Resume.pdf" target="_blank">Resume</a></li>
+              <li><a href="https://www.linkedin.com/in/joelestrada23" rel="noreferrer" target="_blank">LinkedIn</a></li>
+              <li><a href="https://github.com/jre23" rel="noreferrer" target="_blank">GitHub</a></li>
+              <li><a href="./assets/images/Joel's_Resume.pdf" rel="noreferrer" target="_blank">Resume</a></li>
             </ul>
           </div>
         </div>
