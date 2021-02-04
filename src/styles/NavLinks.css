@@ -1,0 +1,44 @@
+/* navbar background colors */
+.nav-index {
+  background-color: #2d283e;
+}
+
+.nav-portfolio {
+  background-color: #5d5c61;
+}
+
+.nav-contact {
+  background-color: #44318d;
+}
+
+/* navbar brand, submit button, and contact info font color */
+.navbar-brand {
+  color: white;
+}
+
+* unvisited link */ a:link {
+  color: rgb(115, 36, 206);
+  /* font-size: 1.1rem; */
+}
+
+/* visited link */
+a:visited {
+  color: #123c69;
+}
+
+/* hover pseudoclass for when a user hovers the mouse pointer over the link */
+a:hover {
+  color: red;
+  font-size: 1.3rem;
+}
+
+/* focus pseudoclass for when a user tabs over the links. When tabbed over, these links will change to the specified font-size and color*/
+a:focus {
+  font-size: 1.2rem;
+  color: green;
+}
+
+/* active pseudoclass for a link that has been selected (mouse click pressed but not released) */
+a:active {
+  color: orange;
+}

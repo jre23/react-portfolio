@@ -1,0 +1,19 @@
+/* footer, footer paragraph, and general inquiries container */
+footer,
+footer p {
+  background-color: #c1c8e4;
+}
+
+footer {
+  border-top: solid;
+  border-color: #314455;
+  border-width: 6px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: rgb(108, 117, 125);
+}

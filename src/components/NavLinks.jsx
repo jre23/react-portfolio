@@ -1,13 +1,14 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import "../styles/NavLinks.css"
 
 const NavLinks = () => {
 
   const location = useLocation();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark nav-portfolio">
-      <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+    <nav className={location.pathname === "/" ? "navbar navbar-expand-lg navbar-dark nav-index" : location.pathname === "/portfolio" ? "navbar navbar-expand-lg navbar-dark nav-portfolio" : location.pathname === "/contact" ? "navbar navbar-expand-lg navbar-dark nav-contact" : "navbar navbar-expand-lg navbar-dark"}>
+      <Link to="/" className="navbar-brand">
         Joel Estrada
       </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -18,17 +19,17 @@ const NavLinks = () => {
       <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
           <li className="nav-item">
-            <Link to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
+            <Link to="/contact" className={location.pathname === "/contact" ? "nav-link active nav-contact" : "nav-link"}>
               Contact
-                </Link>
+            </Link>
           </li>
           <li className="nav-item active">
-            <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
+            <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active nav-portfolio" : "nav-link"}>
               Portfolio
                 </Link>
           </li>
           <li className="nav-item">
-            <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+            <Link to="/" className={location.pathname === "/" ? "nav-link active nav-index" : "nav-link"}>
               About
                 </Link>
           </li>
