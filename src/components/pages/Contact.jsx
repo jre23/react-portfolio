@@ -10,7 +10,6 @@ const Contact = () => {
 
   useEffect(() => {
     const giphyAPI = () => {
-      console.log("=====test giphy=====");
       API.search(gifState.gif).then(res => {
         // use Math.random() to choose a random gif
         let randomIndex = Math.floor(Math.random() * 23);
@@ -51,19 +50,19 @@ const Contact = () => {
               <h1>General Inquiries</h1>
             </header>
             <hr />
-            <form>
+            <form action="https://formspree.io/f/xrgodlyl" method="POST">
               <div className="pl-3 col-12 col-md-10">
                 <div className="form-group">
                   <label htmlFor="inputName">Name</label>
-                  <input type="text" className="form-control" id="inputName" placeholder="Name" />
+                  <input type="text" className="form-control" id="inputName" placeholder="Name" name="name" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="inputEmail">Email</label>
-                  <input type="email" className="form-control" id="inputEmail" placeholder="Email" />
+                  <input type="email" className="form-control" id="inputEmail" placeholder="Email" name="email" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="inputMessage">Message</label>
-                  <textarea className="form-control" id="inputMessage" rows="3" placeholder="Message"></textarea>
+                  <textarea className="form-control" id="inputMessage" rows="3" placeholder="Message" name="message"></textarea>
                 </div>
               </div>
               <div className="pb-4">

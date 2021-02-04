@@ -29,12 +29,6 @@ body {
   }
 }
 
-/* submit button */
-.submit-btn {
-  background-color: #5680e9;
-  border-radius: 50%;
-}
-
 .contact-header {
   color: white;
 }
@@ -76,4 +70,10 @@ a:active {
 
 .submit-background {
   background-color: #c1c8e4;
+}
+
+/* submit button */
+.submit-btn {
+  background-color: #5680e9;
+  border-radius: 50%;
 }
