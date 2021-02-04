@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import API from "../../utils/API";
 import "../../styles/Contact.css";
 
 const Contact = () => {
+  const [gifState, setGifState] = useState({
+    gif: "english bulldog",
+    image: ""
+  })
+
+  useEffect(() => {
+    API.search(gifState.gif).then(res => {
+      // use Math.random() to choose a random gif
+      let randomIndex = Math.floor(Math.random() * 23);
+      let imageURL = res.data.data[randomIndex].images.fixed_height.url;
+      setGifState({ ...gifState, image: imageURL })
+    }).catch((e) => {
+      console.log(e)
+    });
+  }, [gifState.gif]);
+
   return (
     <>
       <main className="container my-5 pt-4">
@@ -16,7 +32,7 @@ const Contact = () => {
                     Email">jre.estrada@gmail.com</a><br />
                   Phone: (253) 249-3170<br />
             </div>
-            <div id="mood-giphy" className="giphy-size">
+            <div><img className="img-fluid" alt="english bulldog or thank you gif" src={gifState.image}></img>
             </div>
             <br />
           </section >
