@@ -1,0 +1,80 @@
+/* portfolio font  */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* font sizes for responsiveness */
+@media screen and (min-width: 577px) {
+
+  h1 {
+    font-size: 27px;
+  }
+
+  h6 {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  h1,
+  h2 {
+    font-size: 25px;
+  }
+}
+
+/* about me container background color */
+.about-me {
+  background-color: #b19f9e;
+}
+
+/* for main section header titles except contact info */
+h1 {
+  color: #2e151b;
+}
+
+/* for index about me selfie  */
+.selfieImg {
+  float: left;
+  height: 180px;
+  width: 180px;
+}
+
+/* to clear the float form the .selfieImg */
+.clear {
+  clear: both;
+}
+
+/* unvisited link */
+a:link {
+  color: rgb(115, 36, 206);
+  /* font-size: 1.1rem; */
+}
+
+/* visited link */
+a:visited {
+  color: #123c69;
+}
+
+/* hover pseudoclass for when a user hovers the mouse pointer over the link */
+a:hover {
+  color: red;
+  font-size: 1.3rem;
+}
+
+/* focus pseudoclass for when a user tabs over the links. When tabbed over, these links will change to the specified font-size and color*/
+a:focus {
+  font-size: 1.2rem;
+  color: green;
+}
+
+/* active pseudoclass for a link that has been selected (mouse click pressed but not released) */
+a:active {
+  color: orange;
+}
