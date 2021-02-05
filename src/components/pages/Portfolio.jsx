@@ -1,4 +1,11 @@
 import React, { useState } from "react";
+import "../../styles/Portfolio.css"
+
+const styles = {
+  modalBackground: {
+    backgroundColor: "#c1c8e4"
+  }
+}
 
 const Portfolio = () => {
   const [clickState, setClickState] = useState({
@@ -14,69 +21,69 @@ const Portfolio = () => {
 
   const displayProjectInfo = event => {
     let projectInfo = event.target.getAttribute("data-project");
-    let title, repoText, repoLink, deployText, deployLink, imageSource, imageAlt, dataTitle;
+    let repoText, repoLink, deployText, deployLink, imageSource, imageAlt;
     // switch statement to determine what links to display based off what screenshot is clicked 
     switch (projectInfo) {
       case "bear-share":
-        title = projectInfo;
         repoText = "GitHub Repository";
         repoLink = "https://github.com/jre23/bear-share";
         deployText = "Heroku Deployment";
         deployLink = "https://nameless-plains-06669.herokuapp.com/";
         imageSource = "./assets/images/bear-share.png";
         imageAlt = "Project #2 Bear Share screenshot";
-        dataTitle = "bear-share"
         break;
-      // case "the-night-planner":
-      //   $("#project-github").attr("href", "https://github.com/jre23/the-night-planner");
-      //   $("#project-github-pages").attr("href", "https://jre23.github.io/the-night-planner");
-      //   $(".clickedOn").attr("alt", "Project #1 The Night Planner screenshot");
-      //   $(".clickedOn").attr("src", "./Assets/Images/the-night-planner.png");
-      //   $(".clickedOn").attr("data-project", "the-night-planner");
-      //   break;
-      // case "eat-da-burger":
-      //   $("#project-github-pages").text("Heroku Deployment");
-      //   $("#project-github").attr("href", "https://github.com/jre23/eat-da-burger");
-      //   $("#project-github-pages").attr("href", "https://salty-meadow-91006.herokuapp.com");
-      //   $(".clickedOn").attr("alt", "Eat Da Burger screenshot");
-      //   $(".clickedOn").attr("src", "./Assets/Images/eat-da-burger.png");
-      //   $(".clickedOn").attr("data-project", "eat-da-burger");
-      //   break;
-      // case "note-taker":
-      //   $("#project-github-pages").text("Heroku Deployment");
-      //   $("#project-github").attr("href", "https://github.com/jre23/note-taker");
-      //   $("#project-github-pages").attr("href", "https://peaceful-spire-85964.herokuapp.com");
-      //   $(".clickedOn").attr("alt", "Note Taker screenshot");
-      //   $(".clickedOn").attr("src", "./Assets/Images/note-taker.png");
-      //   $(".clickedOn").attr("data-project", "note-taker");
-      //   break;
-      // case "weather-dashboard":
-      //   $("#project-github").attr("href", "https://github.com/jre23/weather-dashboard");
-      //   $("#project-github-pages").attr("href", "https://jre23.github.io/weather-dashboard");
-      //   $(".clickedOn").attr("alt", "Weather Dashboard screenshot");
-      //   $(".clickedOn").attr("src", "./Assets/Images/weather-dashboard.png");
-      //   $(".clickedOn").attr("data-project", "weather-dashboard");
-      //   break;
-      // case "timed-coding-quiz":
-      //   $("#project-github").attr("href", "https://github.com/jre23/timed-coding-quiz");
-      //   $("#project-github-pages").attr("href", "https://jre23.github.io/timed-coding-quiz");
-      //   $(".clickedOn").attr("alt", "Timed Coding Quiz screenshot");
-      //   $(".clickedOn").attr("src", "./Assets/Images/timed-coding-quiz.png");
-      //   $(".clickedOn").attr("data-project", "timed-coding-quiz");
-      //   break;
+      case "the-night-planner":
+        repoText = "GitHub Repository";
+        repoLink = "https://github.com/jre23/the-night-planner";
+        deployText = "GitHub Deployment";
+        deployLink = "https://jre23.github.io/the-night-planner";
+        imageSource = "./assets/images/the-night-planner.png";
+        imageAlt = "Project #1 The Night Planner screenshot";
+        break;
+      case "eat-da-burger":
+        repoText = "GitHub Repository";
+        repoLink = "https://github.com/jre23/eat-da-burger";
+        deployText = "Heroku Deployment";
+        deployLink = "https://salty-meadow-91006.herokuapp.com";
+        imageSource = "./assets/images/eat-da-burger.png";
+        imageAlt = "Eat Da Burger screenshot";
+        break;
+      case "note-taker":
+        repoText = "GitHub Repository";
+        repoLink = "https://github.com/jre23/note-taker";
+        deployText = "Heroku Deployment";
+        deployLink = "https://peaceful-spire-85964.herokuapp.com";
+        imageSource = "./assets/images/note-taker.png";
+        imageAlt = "Note Taker screenshot";
+        break;
+      case "weather-dashboard":
+        repoText = "GitHub Repository";
+        repoLink = "https://github.com/jre23/weather-dashboard";
+        deployText = "GitHub Deployment";
+        deployLink = "https://jre23.github.io/weather-dashboard";
+        imageSource = "./assets/images/weather-dashboard.png";
+        imageAlt = "Weather Dashboard screenshot";
+        break;
+      case "timed-coding-quiz":
+        repoText = "GitHub Repository";
+        repoLink = "https://github.com/jre23/timed-coding-quiz";
+        deployText = "GitHub Deployment";
+        deployLink = "https://jre23.github.io/timed-coding-quiz";
+        imageSource = "./assets/images/timed-coding-quiz.png";
+        imageAlt = "Timed Coding Quiz screenshot";
+        break;
     }
     setClickState({
-      projectTitle: title,
+      projectTitle: projectInfo,
       gitHubRepoText: repoText,
       gitHubRepoLink: repoLink,
       deploymentText: deployText,
       deploymentLink: deployLink,
       imgSrc: imageSource,
       imgAlt: imageAlt,
-      dataProject: dataTitle,
+      dataProject: projectInfo,
     })
   }
-
 
   return (
     <>
@@ -146,7 +153,7 @@ const Portfolio = () => {
       {/* <!-- modal  --> */}
       <div className="modal fade" id="projectModal" tabIndex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content submit-background">
+          <div className="modal-content" style={styles.modalBackground}>
             <div className="modal-header">
               <h3 className="modal-title" id="project-info-title">{clickState.projectTitle}</h3>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

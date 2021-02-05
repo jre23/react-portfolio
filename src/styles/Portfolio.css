@@ -29,11 +29,20 @@ body {
   }
 }
 
-/* contact info section */
-.contact-border-background {
-  border-left: solid;
-  border-left-color: gray;
-  background-color: #5680e9;
+/* portfolio container background color */
+.portfolio-background {
+  background-color: #f4976c;
+}
+
+/* github links for portfolio */
+.position-stick {
+  position: sticky;
+  top: 15px;
+}
+
+/* for main section header titles except contact info */
+h1 {
+  color: #2e151b;
 }
 
 /* unvisited link */
@@ -62,12 +71,4 @@ a:focus {
 /* active pseudoclass for a link that has been selected (mouse click pressed but not released) */
 a:active {
   color: orange;
-}
-
-.contact-header {
-  color: white;
-}
-
-.submit-background {
-  background-color: #c1c8e4;
 }

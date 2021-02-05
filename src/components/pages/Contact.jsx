@@ -2,6 +2,13 @@ import React, { useState, useEffect } from "react";
 import API from "../../utils/API";
 import "../../styles/Contact.css";
 
+const styles = {
+  submitBtn: {
+    backgroundColor: "#5680e9",
+    borderRadius: "50%"
+  }
+}
+
 const Contact = () => {
   const [gifState, setGifState] = useState({
     gif: "english bulldog",
@@ -66,7 +73,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="pb-4">
-                <button onClick={handleSubmit} type="submit" className="btn btn-sm py-2 px-2 submit-btn" data-target="Thanks">Submit
+                <button onClick={handleSubmit} type="submit" className="btn btn-sm py-2 px-2 submit-btn" data-target="Thanks" style={styles.submitBtn}>Submit
                 </button>
               </div>
             </form>
