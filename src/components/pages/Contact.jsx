@@ -26,6 +26,7 @@ const Contact = () => {
         console.log(e)
       });
     };
+
     giphyAPI();
   }, [gifState.gif]);
 
@@ -33,6 +34,22 @@ const Contact = () => {
     event.preventDefault();
     let dataValue = event.target.getAttribute("data-target");
     setGifState({ ...gifState, gif: dataValue });
+    // used formspree to handle form submissions. reference: https://formspree.io/forms/xrgodlyl/integration
+    const form = event.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        alert("Thanks for your inquiry!");
+      } else {
+        alert("Oops! There was an error.");
+      }
+    };
+    xhr.send(data);
   }
 
   return (
@@ -57,23 +74,23 @@ const Contact = () => {
               <h1>General Inquiries</h1>
             </header>
             <hr />
-            <form action="https://formspree.io/f/xrgodlyl" method="POST">
+            <form onSubmit={handleSubmit} data-target="Thanks" action="https://formspree.io/f/xrgodlyl" method="POST">
               <div className="pl-3 col-12 col-md-10">
                 <div className="form-group">
                   <label htmlFor="inputName">Name</label>
-                  <input type="text" className="form-control" id="inputName" placeholder="Name" name="name" />
+                  <input type="text" className="form-control" placeholder="Name" name="name" required />
                 </div>
                 <div className="form-group">
                   <label htmlFor="inputEmail">Email</label>
-                  <input type="email" className="form-control" id="inputEmail" placeholder="Email" name="email" />
+                  <input type="email" className="form-control" placeholder="Email" name="email" required />
                 </div>
                 <div className="form-group">
                   <label htmlFor="inputMessage">Message</label>
-                  <textarea className="form-control" id="inputMessage" rows="3" placeholder="Message" name="message"></textarea>
+                  <textarea className="form-control" rows="3" placeholder="Message" name="message" required></textarea>
                 </div>
               </div>
               <div className="pb-4">
-                <button onClick={handleSubmit} type="submit" className="btn btn-sm py-2 px-2 submit-btn" data-target="Thanks" style={styles.submitBtn}>Submit
+                <button type="submit" className="btn btn-sm py-2 px-2 submit-btn" style={styles.submitBtn}>Submit
                 </button>
               </div>
             </form>

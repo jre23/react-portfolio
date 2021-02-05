@@ -72,6 +72,8 @@ const Portfolio = () => {
         imageSource = "./assets/images/timed-coding-quiz.png";
         imageAlt = "Timed Coding Quiz screenshot";
         break;
+      default:
+        return;
     }
     setClickState({
       projectTitle: projectInfo,
@@ -160,8 +162,8 @@ const Portfolio = () => {
             </div>
             <div className="modal-body">
               <ul>
-                <li><a id="project-github" href={clickState.gitHubRepoLink} target="_blank">{clickState.gitHubRepoText}</a></li>
-                <li><a id="project-github-pages" href={clickState.deploymentLink} target="_blank">{clickState.deploymentText}</a>
+                <li><a id="project-github" href={clickState.gitHubRepoLink} target="_blank" rel="noreferrer">{clickState.gitHubRepoText}</a></li>
+                <li><a id="project-github-pages" href={clickState.deploymentLink} target="_blank" rel="noreferrer">{clickState.deploymentText}</a>
                 </li>
               </ul>
               <img className="img-fluid" alt={clickState.imgAlt} src={clickState.imgSrc} data-project={clickState.dataProject} onClick={displayProjectInfo} />
