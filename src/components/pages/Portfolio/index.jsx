@@ -21,32 +21,8 @@ const Portfolio = () => {
   })
 
   const displayProjectInfo = event => {
-    let projectInfo = event.target.getAttribute("data-project");
     let dataValue = parseInt(event.target.getAttribute("data-value"));
-    let fromJson = {}
-    switch (projectInfo) {
-      case "bear-share":
-        fromJson = projects[dataValue];
-        break;
-      case "the-night-planner":
-        fromJson = projects[dataValue];
-        break;
-      case "eat-da-burger":
-        fromJson = projects[dataValue];
-        break;
-      case "note-taker":
-        fromJson = projects[dataValue];
-        break;
-      case "weather-dashboard":
-        fromJson = projects[dataValue];
-        break;
-      case "timed-coding-quiz":
-        fromJson = projects[dataValue];
-        break;
-      default:
-        return;
-    }
-    setClickState({ ...fromJson });
+    setClickState({ ...projects[dataValue] });
   }
 
   return (
