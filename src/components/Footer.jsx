@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="text-center py-1">
       <p className="mb-0 py-2">
         &copy; Copyright 2020 Joel Estrada
-</p>
+      </p>
     </footer>
   )
 }
