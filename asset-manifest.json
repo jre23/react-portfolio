@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/jre23/react-portfolio/static/css/main.f0979379.chunk.css",
+    "main.js": "/jre23/react-portfolio/static/js/main.83f60851.chunk.js",
+    "main.js.map": "/jre23/react-portfolio/static/js/main.83f60851.chunk.js.map",
+    "runtime-main.js": "/jre23/react-portfolio/static/js/runtime-main.ef86c65c.js",
+    "runtime-main.js.map": "/jre23/react-portfolio/static/js/runtime-main.ef86c65c.js.map",
+    "static/css/2.150d169a.chunk.css": "/jre23/react-portfolio/static/css/2.150d169a.chunk.css",
+    "static/js/2.2d46f0f1.chunk.js": "/jre23/react-portfolio/static/js/2.2d46f0f1.chunk.js",
+    "static/js/2.2d46f0f1.chunk.js.map": "/jre23/react-portfolio/static/js/2.2d46f0f1.chunk.js.map",
+    "index.html": "/jre23/react-portfolio/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/jre23/react-portfolio/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.f0979379.chunk.css.map": "/jre23/react-portfolio/static/css/main.f0979379.chunk.css.map",
+    "static/js/2.2d46f0f1.chunk.js.LICENSE.txt": "/jre23/react-portfolio/static/js/2.2d46f0f1.chunk.js.LICENSE.txt",
+    "static/media/NavLinks.css": "/jre23/react-portfolio/static/media/matrix-background.59d5e7ae.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef86c65c.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.2d46f0f1.chunk.js",
+    "static/css/main.f0979379.chunk.css",
+    "static/js/main.83f60851.chunk.js"
+  ]
+}
