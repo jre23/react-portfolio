@@ -22,25 +22,26 @@ const Portfolio = () => {
 
   const displayProjectInfo = event => {
     let projectInfo = event.target.getAttribute("data-project");
+    let dataValue = parseInt(event.target.getAttribute("data-value"));
     let fromJson = {}
     switch (projectInfo) {
       case "bear-share":
-        fromJson = projects[0];
+        fromJson = projects[dataValue];
         break;
       case "the-night-planner":
-        fromJson = projects[1];
+        fromJson = projects[dataValue];
         break;
       case "eat-da-burger":
-        fromJson = projects[2];
+        fromJson = projects[dataValue];
         break;
       case "note-taker":
-        fromJson = projects[3];
+        fromJson = projects[dataValue];
         break;
       case "weather-dashboard":
-        fromJson = projects[4];
+        fromJson = projects[dataValue];
         break;
       case "timed-coding-quiz":
-        fromJson = projects[5];
+        fromJson = projects[dataValue];
         break;
       default:
         return;
@@ -73,19 +74,20 @@ const Portfolio = () => {
           {/* <!-- first column --> */}
           <div className="col-12 col-md-4 pl-4 pr-4 pr-lg-3 portfolio-background">
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt="Project #2 Bear Share screenshot" src="./Assets/Images/bear-share.png"
-              data-project="bear-share" onClick={displayProjectInfo} />
+              alt={projects[0].imgAlt} src={projects[0].imgSrc}
+              data-project={projects[0].projectTitle} onClick={displayProjectInfo} data-value="0" />
             <br />
             <br />
             <br />
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt="Project #1 The Night Planner screenshot" src="./Assets/Images/the-night-planner.png"
-              data-project="the-night-planner" onClick={displayProjectInfo} />
+              alt={projects[1].imgAlt} src={projects[1].imgSrc}
+              data-project={projects[1].projectTitle} onClick={displayProjectInfo} data-value="1" />
             <br />
             <br />
             <br />
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt="Eat Da Burger screenshot" src="./Assets/Images/eat-da-burger.png" data-project="eat-da-burger" onClick={displayProjectInfo} />
+              alt={projects[2].imgAlt} src={projects[2].imgSrc}
+              data-project={projects[2].projectTitle} onClick={displayProjectInfo} data-value="2" />
             <br />
             <br />
             <br />
@@ -93,19 +95,20 @@ const Portfolio = () => {
           {/* <!-- second column for images to expand to for larger screen widths  --> */}
           <div className="col-12 col-md-4 pl-4 pr-4 pl-lg-3 pr-lg-4 portfolio-background">
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt="Note Taker screenshot" src="./Assets/Images/note-taker.png" data-project="note-taker" onClick={displayProjectInfo} />
+              alt={projects[3].imgAlt} src={projects[3].imgSrc}
+              data-project={projects[3].projectTitle} onClick={displayProjectInfo} data-value="3" />
             <br />
             <br />
             <br />
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt="Weather Dashboard screenshot" src="./Assets/Images/weather-dashboard.png"
-              data-project="weather-dashboard" onClick={displayProjectInfo} />
+              alt={projects[4].imgAlt} src={projects[4].imgSrc}
+              data-project={projects[4].projectTitle} onClick={displayProjectInfo} data-value="4" />
             <br />
             <br />
             <br />
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt="Timed Coding Quiz screenshot" src="./Assets/Images/timed-coding-quiz.png"
-              data-project="timed-coding-quiz" onClick={displayProjectInfo} />
+              alt={projects[5].imgAlt} src={projects[5].imgSrc}
+              data-project={projects[5].projectTitle} onClick={displayProjectInfo} data-value="5" />
             <br />
             <br />
             <br />
