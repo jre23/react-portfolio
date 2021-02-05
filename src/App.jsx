@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/react-portfolio">
       <div>
         <NavLinks />
         <Switch>
