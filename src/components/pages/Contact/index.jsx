@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import API from "../../utils/API";
-import "../../styles/Contact.css";
+import API from "../../../utils/API";
+import "../../../styles/Contact.css";
 
 const styles = {
   submitBtn: {

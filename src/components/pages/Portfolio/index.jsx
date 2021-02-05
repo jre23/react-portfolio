@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../../styles/Portfolio.css"
+import projects from "./projects.json";
+import "../../../styles/Portfolio.css"
 
 const styles = {
   modalBackground: {
@@ -21,70 +22,30 @@ const Portfolio = () => {
 
   const displayProjectInfo = event => {
     let projectInfo = event.target.getAttribute("data-project");
-    let repoText, repoLink, deployText, deployLink, imageSource, imageAlt;
-    // switch statement to determine what links to display based off what screenshot is clicked 
+    let fromJson = {}
     switch (projectInfo) {
       case "bear-share":
-        repoText = "GitHub Repository";
-        repoLink = "https://github.com/jre23/bear-share";
-        deployText = "Heroku Deployment";
-        deployLink = "https://nameless-plains-06669.herokuapp.com/";
-        imageSource = "./assets/images/bear-share.png";
-        imageAlt = "Project #2 Bear Share screenshot";
+        fromJson = projects[0];
         break;
       case "the-night-planner":
-        repoText = "GitHub Repository";
-        repoLink = "https://github.com/jre23/the-night-planner";
-        deployText = "GitHub Deployment";
-        deployLink = "https://jre23.github.io/the-night-planner";
-        imageSource = "./assets/images/the-night-planner.png";
-        imageAlt = "Project #1 The Night Planner screenshot";
+        fromJson = projects[1];
         break;
       case "eat-da-burger":
-        repoText = "GitHub Repository";
-        repoLink = "https://github.com/jre23/eat-da-burger";
-        deployText = "Heroku Deployment";
-        deployLink = "https://salty-meadow-91006.herokuapp.com";
-        imageSource = "./assets/images/eat-da-burger.png";
-        imageAlt = "Eat Da Burger screenshot";
+        fromJson = projects[2];
         break;
       case "note-taker":
-        repoText = "GitHub Repository";
-        repoLink = "https://github.com/jre23/note-taker";
-        deployText = "Heroku Deployment";
-        deployLink = "https://peaceful-spire-85964.herokuapp.com";
-        imageSource = "./assets/images/note-taker.png";
-        imageAlt = "Note Taker screenshot";
+        fromJson = projects[3];
         break;
       case "weather-dashboard":
-        repoText = "GitHub Repository";
-        repoLink = "https://github.com/jre23/weather-dashboard";
-        deployText = "GitHub Deployment";
-        deployLink = "https://jre23.github.io/weather-dashboard";
-        imageSource = "./assets/images/weather-dashboard.png";
-        imageAlt = "Weather Dashboard screenshot";
+        fromJson = projects[4];
         break;
       case "timed-coding-quiz":
-        repoText = "GitHub Repository";
-        repoLink = "https://github.com/jre23/timed-coding-quiz";
-        deployText = "GitHub Deployment";
-        deployLink = "https://jre23.github.io/timed-coding-quiz";
-        imageSource = "./assets/images/timed-coding-quiz.png";
-        imageAlt = "Timed Coding Quiz screenshot";
+        fromJson = projects[5];
         break;
       default:
         return;
     }
-    setClickState({
-      projectTitle: projectInfo,
-      gitHubRepoText: repoText,
-      gitHubRepoLink: repoLink,
-      deploymentText: deployText,
-      deploymentLink: deployLink,
-      imgSrc: imageSource,
-      imgAlt: imageAlt,
-      dataProject: projectInfo,
-    })
+    setClickState({ ...fromJson });
   }
 
   return (

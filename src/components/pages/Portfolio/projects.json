@@ -1,0 +1,62 @@
+[
+  {
+    "projectTitle": "bear-share",
+    "gitHubRepoText" : "GitHub Repository",
+    "gitHubRepoLink" : "https://github.com/jre23/bear-share",
+    "deploymentText" : "Heroku Deployment",
+    "deploymentLink" : "https://nameless-plains-06669.herokuapp.com/",
+    "imgSrc" : "./assets/images/bear-share.png",
+    "imgAlt" : "Project #2 Bear Share screenshot",
+    "dataProject": "bear-share"
+  },
+  {
+    "projectTitle": "the-night-planner",
+    "gitHubRepoText" : "GitHub Repository",
+    "gitHubRepoLink" : "https://github.com/jre23/the-night-planner",
+    "deploymentText" : "GitHub Deployment",
+    "deploymentLink" : "https://jre23.github.io/the-night-planner",
+    "imgSrc" : "./assets/images/the-night-planner.png",
+    "imgAlt" : "Project #1 The Night Planner screenshot",
+    "dataProject": "the-night-planner"
+  },
+  {
+    "projectTitle": "eat-da-burger",
+    "gitHubRepoText" : "GitHub Repository",
+    "gitHubRepoLink" : "https://github.com/jre23/eat-da-burger",
+    "deploymentText" : "Heroku Deployment",
+    "deploymentLink" : "https://salty-meadow-91006.herokuapp.com",
+    "imgSrc" : "./assets/images/eat-da-burger.png",
+    "imgAlt" : "Eat Da Burger screenshot",
+    "dataProject": "eat-da-burger"
+  },
+  {
+    "projectTitle": "note-taker",
+    "gitHubRepoText" : "GitHub Repository",
+    "gitHubRepoLink" : "https://github.com/jre23/note-taker",
+    "deploymentText" : "Heroku Deployment",
+    "deploymentLink" : "https://peaceful-spire-85964.herokuapp.com",
+    "imgSrc" : "./assets/images/note-taker.png",
+    "imgAlt" : "Note Taker screenshot",
+    "dataProject": "note-taker"
+  },
+  {
+    "projectTitle": "weather-dashboard",
+    "gitHubRepoText" : "GitHub Repository",
+    "gitHubRepoLink" : "https://github.com/jre23/weather-dashboard",
+    "deploymentText" : "GitHub Deployment",
+    "deploymentLink" : "https://jre23.github.io/weather-dashboard",
+    "imgSrc" : "./assets/images/weather-dashboard.png",
+    "imgAlt" : "Weather Dashboard screenshot",
+    "dataProject": "weather-dashboard"
+  },
+  {
+    "projectTitle": "timed-coding-quiz",
+    "gitHubRepoText" : "GitHub Repository",
+    "gitHubRepoLink" : "https://github.com/jre23/timed-coding-quiz",
+    "deploymentText" : "GitHub Deployment",
+    "deploymentLink" : "https://jre23.github.io/timed-coding-quiz",
+    "imgSrc" : "./assets/images/timed-coding-quiz.png",
+    "imgAlt" : "Timed Coding Quiz screenshot",
+    "dataProject": "timed-coding-quiz"
+  }
+]
