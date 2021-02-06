@@ -51,9 +51,11 @@ const Portfolio = () => {
     setClickState({ ...projects[dataValue], imgSrc: projectImg });
   }
 
+  const projectImg = [projectImg0, projectImg1, projectImg2, projectImg3, projectImg4, projectImg5];
+
   return (
     <>
-      <PortfolioContainer displayProjectInfo={displayProjectInfo} projectImg0={projectImg0} projectImg1={projectImg1} projectImg2={projectImg2} projectImg3={projectImg3} projectImg4={projectImg4} projectImg5={projectImg5} />
+      <PortfolioContainer displayProjectInfo={displayProjectInfo} projectImages={projectImg} />
       <PortfolioModal clickState={clickState} />
     </>
   )
