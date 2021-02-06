@@ -29,7 +29,7 @@ const NavLinks = () => {
                   Contact
             </Link>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item">
                 <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active nav-portfolio" : "nav-link"}>
                   Portfolio
                 </Link>
