@@ -1,4 +1,4 @@
-# React Portfolio - in development
+# React Portfolio
 
 ## Table of Contents
 
@@ -18,23 +18,28 @@ The goal for this project was to rebuild my portfolio using React! The previous 
 
 [GitHub Repo](https://github.com/jre23/react-portfolio)
 
-[GitHub Deployment](https://jre23.github.io/react-portfolio) In development!
+[GitHub Deployment](https://jre23.github.io/react-portfolio)
 
 ## Screenshots
 
-![react portfolio screenshot 1]()
+![react portfolio screenshot 1](https://user-images.githubusercontent.com/69170823/104141771-3e7f4180-536d-11eb-88ec-8d71d2a93bf1.png)
 
-![react portfolio screenshot 2]()
+![react portfolio screenshot 2](https://user-images.githubusercontent.com/69170823/104141747-1a236500-536d-11eb-8b41-fa8fae9f94e1.png)
 
-![react portfolio screenshot 3]()
+![react portfolio screenshot 3](https://user-images.githubusercontent.com/69170823/107104879-82346200-67d8-11eb-934d-760bae9b432d.png)
 
-![react portfolio screenshot 4]()
+![react portfolio screenshot 4](https://user-images.githubusercontent.com/69170823/107104905-9aa47c80-67d8-11eb-9f20-6c90b0d89292.png)
+
+![react portfolio screenshot 5](https://user-images.githubusercontent.com/69170823/104141873-bc434d00-536d-11eb-86fd-40b86583e95a.png)
+
+![react portfolio screenshot 6](https://user-images.githubusercontent.com/69170823/107104938-c6bffd80-67d8-11eb-9267-8612314d4e92.png)
 
 ## Technologies
 
 Please see the following for a list of technologies used in this project:
 
 * JavaScript
+* Bootstrap
 * Node.js
 * Git Bash
 * React
@@ -48,11 +53,11 @@ Visual Studio Code: 1.48.2
 Google Chrome: 78.0.3904.130
 Git for Windows: 2.28.0.1
 
+[Bootstrap](https://getbootstrap.com)
+
 [Node.js](https://nodejs.org/en)
 
 [React](https://reactjs.org)
-
-[Random User API](https://randomuser.me)
 
 Git clone link: htt<span>ps://github.com/jre23/react-portfolio.git</span>
 
