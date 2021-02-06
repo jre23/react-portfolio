@@ -5,7 +5,7 @@
     "gitHubRepoLink" : "https://github.com/jre23/bear-share",
     "deploymentText" : "Heroku Deployment",
     "deploymentLink" : "https://nameless-plains-06669.herokuapp.com/",
-    "imgSrc" : "./assets/images/bear-share.png",
+    "imgSrc" : "../../../images/bear-share.png",
     "imgAlt" : "Project #2 Bear Share screenshot",
     "dataProject": "bear-share"
   },
@@ -15,7 +15,7 @@
     "gitHubRepoLink" : "https://github.com/jre23/the-night-planner",
     "deploymentText" : "GitHub Deployment",
     "deploymentLink" : "https://jre23.github.io/the-night-planner",
-    "imgSrc" : "./assets/images/the-night-planner.png",
+    "imgSrc" : "../../../images/the-night-planner.png",
     "imgAlt" : "Project #1 The Night Planner screenshot",
     "dataProject": "the-night-planner"
   },
@@ -25,7 +25,7 @@
     "gitHubRepoLink" : "https://github.com/jre23/eat-da-burger",
     "deploymentText" : "Heroku Deployment",
     "deploymentLink" : "https://salty-meadow-91006.herokuapp.com",
-    "imgSrc" : "./assets/images/eat-da-burger.png",
+    "imgSrc" : "../../../images/eat-da-burger.png",
     "imgAlt" : "Eat Da Burger screenshot",
     "dataProject": "eat-da-burger"
   },
@@ -35,7 +35,7 @@
     "gitHubRepoLink" : "https://github.com/jre23/employee-directory",
     "deploymentText" : "GitHub Deployment",
     "deploymentLink" : "https://jre23.github.io/employee-directory",
-    "imgSrc" : "./assets/images/employee-directory.png",
+    "imgSrc" : "../../../images/employee-directory.png",
     "imgAlt" : "Employee Directory screenshot",
     "dataProject": "employee-directory"
   },
@@ -45,7 +45,7 @@
     "gitHubRepoLink" : "https://github.com/jre23/workout-tracker",
     "deploymentText" : "Heroku Deployment",
     "deploymentLink" : "https://still-meadow-28588.herokuapp.com",
-    "imgSrc" : "./assets/images/workout-tracker.png",
+    "imgSrc" : "../../../images/workout-tracker.png",
     "imgAlt" : "Workout Tracker screenshot",
     "dataProject": "workout-tracker"
   },
@@ -55,7 +55,7 @@
     "gitHubRepoLink" : "https://github.com/jre23/budget-tracker",
     "deploymentText" : "Heroku Deployment",
     "deploymentLink" : "https://desolate-harbor-98538.herokuapp.com",
-    "imgSrc" : "./assets/images/budget-tracker.png",
+    "imgSrc" : "../../../images/budget-tracker.png",
     "imgAlt" : "Budget Tracker screenshot",
     "dataProject": "budget-tracker"
   }

@@ -8,14 +8,13 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <Router basename="/react-portfolio">
+    <Router basename="/jre23/react-portfolio">
       <div>
         <NavLinks />
         <Switch>
           <Route exact path="/"> <About /> </Route>
           <Route exact path="/portfolio"> <Portfolio /> </Route>
           <Route exact path="/contact" > <Contact /> </Route>
-          <Route> <About /> </Route>
         </Switch>
         <Footer />
       </div>

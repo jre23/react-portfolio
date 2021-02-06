@@ -27,19 +27,19 @@ const PortfolioContainer = props => {
           {/* <!-- first column --> */}
           <div className="col-12 col-md-4 pl-4 pr-4 pr-lg-3 portfolio-background">
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt={projects[0].imgAlt} src={projects[0].imgSrc}
+              alt={projects[0].imgAlt} src={props.projectImg0}
               data-project={projects[0].projectTitle} onClick={props.displayProjectInfo} data-value="0" />
             <br />
             <br />
             <br />
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt={projects[1].imgAlt} src={projects[1].imgSrc}
+              alt={projects[1].imgAlt} src={props.projectImg1}
               data-project={projects[1].projectTitle} onClick={props.displayProjectInfo} data-value="1" />
             <br />
             <br />
             <br />
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt={projects[2].imgAlt} src={projects[2].imgSrc}
+              alt={projects[2].imgAlt} src={props.projectImg2}
               data-project={projects[2].projectTitle} onClick={props.displayProjectInfo} data-value="2" />
             <br />
             <br />
@@ -48,19 +48,19 @@ const PortfolioContainer = props => {
           {/* <!-- second column for images to expand to for larger screen widths  --> */}
           <div className="col-12 col-md-4 pl-4 pr-4 pl-lg-3 pr-lg-4 portfolio-background">
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt={projects[3].imgAlt} src={projects[3].imgSrc}
+              alt={projects[3].imgAlt} src={props.projectImg3}
               data-project={projects[3].projectTitle} onClick={props.displayProjectInfo} data-value="3" />
             <br />
             <br />
             <br />
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt={projects[4].imgAlt} src={projects[4].imgSrc}
+              alt={projects[4].imgAlt} src={props.projectImg4}
               data-project={projects[4].projectTitle} onClick={props.displayProjectInfo} data-value="4" />
             <br />
             <br />
             <br />
             <img data-bs-toggle="modal" data-bs-target="#projectModal" className="img-fluid"
-              alt={projects[5].imgAlt} src={projects[5].imgSrc}
+              alt={projects[5].imgAlt} src={props.projectImg5}
               data-project={projects[5].projectTitle} onClick={props.displayProjectInfo} data-value="5" />
             <br />
             <br />

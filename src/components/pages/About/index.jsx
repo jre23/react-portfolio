@@ -1,6 +1,7 @@
 import React from "react";
+import selfie from "../../../images/joel-selfie.jpg";
+import resume from "../../../images/Joel's_Resume.pdf";
 import "../../../styles/About.css";
-
 const About = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const About = () => {
               <h1>About Me</h1>
             </header>
             <hr />
-            <img className="mr-4 mb-2 selfieImg" alt="Joel's selfie" src="./assets/images/joel-selfie.jpg" />
+            <img className="mr-4 mb-2 selfieImg" alt="Joel's selfie" src={selfie} />
             <p>Hello! Welcome to my portfolio! My name is Joel and I'm currently a student in the
             University of Washington Coding Boot Camp! This portfolio showcases the coding skills I've learned
             so far! These skills
@@ -40,7 +41,7 @@ const About = () => {
             <ul>
               <li><a href="https://www.linkedin.com/in/joelestrada23" rel="noreferrer" target="_blank">LinkedIn</a></li>
               <li><a href="https://github.com/jre23" rel="noreferrer" target="_blank">GitHub</a></li>
-              <li><a href="./assets/images/Joel's_Resume.pdf" rel="noreferrer" target="_blank">Resume</a></li>
+              <li><a href={resume} rel="noreferrer" target="_blank">Resume</a></li>
             </ul>
           </div>
         </div>
