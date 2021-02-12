@@ -4,11 +4,11 @@ import PortfolioModal from "./PortfolioModal";
 import projects from "./projects.json";
 import projectImg0 from "../../../images/bear-share.png";
 import projectImg1 from "../../../images/the-night-planner.png";
-import projectImg2 from "../../../images/eat-da-burger.png";
+import projectImg2 from "../../../images/google-books-search.png";
 import projectImg3 from "../../../images/employee-directory.png";
 import projectImg4 from "../../../images/workout-tracker.png";
 import projectImg5 from "../../../images/budget-tracker.png";
-import "../../../styles/Portfolio.css"
+import "../../../styles/Portfolio.css";
 
 const Portfolio = () => {
   const [clickState, setClickState] = useState({
@@ -20,9 +20,9 @@ const Portfolio = () => {
     imgSrc: "",
     imgAlt: "",
     dataProject: "",
-  })
+  });
 
-  const displayProjectInfo = event => {
+  const displayProjectInfo = (event) => {
     let dataValue = parseInt(event.target.getAttribute("data-value"));
     let dataProject = event.target.getAttribute("data-project");
     let projectImg = "";
@@ -33,7 +33,7 @@ const Portfolio = () => {
       case "the-night-planner":
         projectImg = projectImg1;
         break;
-      case "eat-da-burger":
+      case "google-books-search":
         projectImg = projectImg2;
         break;
       case "employee-directory":
@@ -49,16 +49,26 @@ const Portfolio = () => {
         return;
     }
     setClickState({ ...projects[dataValue], imgSrc: projectImg });
-  }
+  };
 
-  const projectImg = [projectImg0, projectImg1, projectImg2, projectImg3, projectImg4, projectImg5];
+  const projectImg = [
+    projectImg0,
+    projectImg1,
+    projectImg2,
+    projectImg3,
+    projectImg4,
+    projectImg5,
+  ];
 
   return (
     <>
-      <PortfolioContainer displayProjectInfo={displayProjectInfo} projectImages={projectImg} />
+      <PortfolioContainer
+        displayProjectInfo={displayProjectInfo}
+        projectImages={projectImg}
+      />
       <PortfolioModal clickState={clickState} />
     </>
-  )
-}
+  );
+};
 
 export default Portfolio;

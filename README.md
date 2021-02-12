@@ -2,6 +2,8 @@
 
 ## Table of Contents
 
+- [React Portfolio](#react-portfolio)
+  - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [GitHub Repo and GitHub Deployment](#github-repo-and-github-deployment)
   - [Screenshots](#screenshots)
@@ -38,11 +40,11 @@ The goal for this project was to rebuild my portfolio using React! The previous 
 
 Please see the following for a list of technologies used in this project:
 
-* JavaScript
-* Bootstrap
-* Node.js
-* Git Bash
-* React
+- JavaScript
+- Bootstrap
+- Node.js
+- Git Bash
+- React
 
 ## Installation
 
@@ -67,4 +69,4 @@ To run this application on a local machine, make sure all of the programs (or si
 
 ## Credits
 
-This was the eighteenth assignment completed as part of the University of Washington Coding Boot Camp. [UW Coding Boot Camp Home Page](https://bootcamp.uw.edu/coding/)
+This was the twentieth assignment completed as part of the University of Washington Coding Boot Camp. [UW Coding Boot Camp Home Page](https://bootcamp.uw.edu/coding/)
