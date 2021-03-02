@@ -20,6 +20,8 @@ const Portfolio = () => {
     imgSrc: "",
     imgAlt: "",
     dataProject: "",
+    summary: "",
+    tech: "",
   });
 
   const displayProjectInfo = (event) => {
