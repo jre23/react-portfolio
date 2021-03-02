@@ -2,15 +2,14 @@
 
 ## Table of Contents
 
-- [React Portfolio](#react-portfolio)
-  - [Table of Contents](#table-of-contents)
-  - [Description](#description)
-  - [GitHub Repo and GitHub Deployment](#github-repo-and-github-deployment)
-  - [Screenshots](#screenshots)
-  - [Technologies](#technologies)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
+- [Table of Contents](#table-of-contents)
+- [Description](#description)
+- [GitHub Repo and GitHub Deployment](#github-repo-and-github-deployment)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
 
 ## Description
 

@@ -40,14 +40,14 @@
     "dataProject": "employee-directory"
   },
   {
-    "projectTitle": "workout-tracker",
+    "projectTitle": "party-perfect",
     "gitHubRepoText": "GitHub Repository",
-    "gitHubRepoLink": "https://github.com/jre23/workout-tracker",
+    "gitHubRepoLink": "https://github.com/jre23/Party-Perfect",
     "deploymentText": "Heroku Deployment",
-    "deploymentLink": "https://still-meadow-28588.herokuapp.com",
-    "imgSrc": "../../../images/workout-tracker.png",
-    "imgAlt": "Workout Tracker screenshot",
-    "dataProject": "workout-tracker"
+    "deploymentLink": "https://party-perfect.herokuapp.com",
+    "imgSrc": "../../../images/party-perfect.png",
+    "imgAlt": "Party Perfect screenshot",
+    "dataProject": "party-perfect"
   },
   {
     "projectTitle": "budget-tracker",

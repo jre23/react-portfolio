@@ -6,7 +6,7 @@ import projectImg0 from "../../../images/bear-share.png";
 import projectImg1 from "../../../images/the-night-planner.png";
 import projectImg2 from "../../../images/google-books-search.png";
 import projectImg3 from "../../../images/employee-directory.png";
-import projectImg4 from "../../../images/workout-tracker.png";
+import projectImg4 from "../../../images/party-perfect.png";
 import projectImg5 from "../../../images/budget-tracker.png";
 import "../../../styles/Portfolio.css";
 
@@ -39,7 +39,7 @@ const Portfolio = () => {
       case "employee-directory":
         projectImg = projectImg3;
         break;
-      case "workout-tracker":
+      case "party-perfect":
         projectImg = projectImg4;
         break;
       case "budget-tracker":
