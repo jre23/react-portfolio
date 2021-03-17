@@ -8,7 +8,7 @@ const About = () => {
       {/* // <!-- main container to house rows and columns --> */}
       <main className="container my-5 pt-4">
         {/* <!-- row and column for h1 title and main content--> */}
-        <div className="row">
+        <div className="row justify-content-center">
           <section className="col-12 col-md-7 col-lg-8 pt-4 pl-4 pr-4 about-me">
             <header>
               <h1>About Me</h1>

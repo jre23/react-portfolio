@@ -1,11 +1,10 @@
 /* portfolio font  */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* font sizes for responsiveness */
 @media screen and (min-width: 577px) {
-
   h1 {
     font-size: 27px;
   }
@@ -22,7 +21,6 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-
   h1,
   h2 {
     font-size: 25px;
