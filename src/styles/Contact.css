@@ -16,7 +16,7 @@ body {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 38px;
+    font-size: 35px;
   }
 }
 
@@ -70,4 +70,10 @@ a:active {
 .submit-background {
   background-color: #c1c8e4;
   opacity: 0.95;
+}
+
+.img-size {
+  max-height: 223px;
+  max-width: 223px;
+  object-fit: contain;
 }
