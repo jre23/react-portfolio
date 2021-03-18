@@ -32,7 +32,7 @@ body {
   border-left: solid;
   border-left-color: gray;
   background-color: #5680e9;
-  opacity: 0.95;
+  opacity: 0.89;
 }
 
 /* unvisited link */
@@ -69,7 +69,7 @@ a:active {
 
 .submit-background {
   background-color: #c1c8e4;
-  opacity: 0.95;
+  opacity: 0.89;
 }
 
 .img-size {

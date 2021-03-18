@@ -60,7 +60,7 @@ const Contact = () => {
             <h1 className="contact-header">Contact Info</h1>
             <hr />
             <div className="contact-info">
-              <h5>Joel Estrada</h5> Seattle, WA
+              <h5 className="mb-1">Joel Estrada</h5>Seattle, WA
               <br /> Email:{" "}
               <a
                 href=" mailto:jre.estrada@gmail.com?subject=Joel's Portfolio Contact

@@ -18,7 +18,7 @@ const PortfolioContainer = (props) => {
         </div>
         <div className="row justify-content-center">
           <div className="col-12 pl-4 pr-4 portfolio-background">
-            <h6 className="text-center pb-2">
+            <h6 className="text-center pb-3">
               Click on an image below to see a summary of the project, the
               technologies used, and to get the links to the GitHub Repository
               and to the deployed application!
