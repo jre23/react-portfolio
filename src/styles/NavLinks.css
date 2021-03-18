@@ -1,19 +1,23 @@
 /* navbar background colors */
 .nav-index {
   background-color: #2d283e;
+  opacity: 0.95;
 }
 
 .nav-portfolio {
   background-color: #5d5c61;
+  opacity: 0.95;
 }
 
 .nav-contact {
   background-color: #44318d;
+  opacity: 0.95;
 }
 
 /* navbar brand, submit button, and contact info font color */
 .navbar-brand {
   color: white;
+  opacity: 0.95;
 }
 
 /* unvisited link */
@@ -46,7 +50,7 @@ a:active {
 
 /* background images for each page */
 .bg-index {
-  background-image: url("./images/matrix-background.png")
+  background-image: url("./images/matrix-background.png");
 }
 
 .bg-contact {

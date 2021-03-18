@@ -9,16 +9,16 @@ const PortfolioContainer = (props) => {
       <main className="container my-5 pt-4">
         {/* <!-- row and column for h1 title --> */}
         <div className="row justify-content-center">
-          <section className="col-12 col-md-8 pt-4 pl-4 pr-4 portfolio-background">
+          <section className="col-12 pt-4 pl-4 pr-4 portfolio-background">
             <header>
-              <h1 className="text-md-center">Portfolio</h1>
+              <h1 className="text-center">Portfolio</h1>
             </header>
             <hr />
           </section>
         </div>
         <div className="row justify-content-center">
-          <div className=" col-12 col-md-8 pl-4 pr-4 portfolio-background">
-            <h6 className="text-center">
+          <div className="col-12 pl-4 pr-4 portfolio-background">
+            <h6 className="text-center pb-2">
               Click on an image below to see a summary of the project, the
               technologies used, and to get the links to the GitHub Repository
               and to the deployed application!
@@ -28,7 +28,7 @@ const PortfolioContainer = (props) => {
         {/* <!-- row and columns for images --> */}
         <div className="row justify-content-center">
           {/* <!-- first column --> */}
-          <div className="col-12 col-md-4 pl-4 pr-4 pr-lg-3 portfolio-background">
+          <div className="col-12 col-md-6 pl-2.8 pr-2.8 portfolio-background">
             {projects.slice(0, 3).map((item, index) => (
               <PortfolioProjects
                 key={index}
@@ -38,7 +38,7 @@ const PortfolioContainer = (props) => {
               />
             ))}
           </div>
-          <div className="col-12 col-md-4 pl-4 pr-4 pr-lg-3 portfolio-background">
+          <div className="col-12 col-md-6 pl-2.8 pr-2.8 portfolio-background">
             {projects.slice(3).map((item, index) => (
               <PortfolioProjects
                 key={index}

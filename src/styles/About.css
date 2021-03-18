@@ -30,6 +30,7 @@ body {
 /* about me container background color */
 .about-me {
   background-color: #b19f9e;
+  opacity: 0.96;
 }
 
 /* for main section header titles except contact info */
