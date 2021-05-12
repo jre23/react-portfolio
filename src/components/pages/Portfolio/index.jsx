@@ -3,7 +3,7 @@ import PortfolioContainer from "./PortfolioContainer";
 import PortfolioModal from "./PortfolioModal";
 import projects from "./projects.json";
 import "../../../styles/Portfolio.css";
-
+// have to import images for them to show up even though these variables aren't used
 import projectImg0 from "../../../images/bear-share.png";
 import projectImg1 from "../../../images/the-night-planner.png";
 import projectImg2 from "../../../images/google-books-search.png";
@@ -26,7 +26,15 @@ const Portfolio = () => {
   });
 
   const displayProjectInfo = (event) => {
-    let source = event.target.src.slice(21);
+    let checkLocal = event.target.src;
+    let source = "";
+    if (checkLocal.includes("https")) {
+      // production
+      source = checkLocal.slice(23);
+    } else {
+      // local
+      source = checkLocal.slice(21);
+    }
     let dataValue = parseInt(event.target.getAttribute("data-value"));
     setClickState({
       ...projects[dataValue],
