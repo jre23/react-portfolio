@@ -8,7 +8,7 @@ const PortfolioProjects = (props) => {
         data-bs-target="#projectModal"
         className="img-fluid"
         alt={props.imgAlt}
-        src={props.displayImages.projectImages[props.index]}
+        src={props.imgSrc}
         data-project={props.dataProject}
         onClick={props.displayImages.displayProjectInfo}
         data-value={props.index}
