@@ -7,7 +7,7 @@ const Jumbotron = (props) => {
       <div className="col justify-content-center pl-0 pr-0">
         <div
           style={{
-            height: props.height,
+            height: 300,
             clear: "both",
             paddingTop: 72,
             textAlign: "center",
