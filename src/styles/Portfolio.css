@@ -40,9 +40,9 @@ body {
 }
 
 /* for main section header titles except contact info */
-h1 {
+/* h1 {
   color: #2e151b;
-}
+} */
 
 /* unvisited link */
 a:link {

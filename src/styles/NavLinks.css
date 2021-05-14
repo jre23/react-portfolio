@@ -1,6 +1,6 @@
 /* navbar background colors */
 .nav-index {
-  background-color: #2d283e;
+  background-color: #379683;
   opacity: 0.95;
 }
 
@@ -20,6 +20,10 @@
   opacity: 0.95;
 }
 
+.navBarCustom {
+  font-size: 28px;
+}
+
 /* unvisited link */
 a:link {
   color: rgb(115, 36, 206);
@@ -34,12 +38,12 @@ a:visited {
 /* hover pseudoclass for when a user hovers the mouse pointer over the link */
 a:hover {
   color: red;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 /* focus pseudoclass for when a user tabs over the links. When tabbed over, these links will change to the specified font-size and color*/
 a:focus {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: green;
 }
 
@@ -51,6 +55,7 @@ a:active {
 /* background images for each page */
 .bg-index {
   background-image: url("./images/matrix-background.png");
+  opacity: 0.07;
 }
 
 .bg-contact {
