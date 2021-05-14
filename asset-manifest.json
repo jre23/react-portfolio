@@ -1,32 +1,37 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.441c6bc9.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.e8928932.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.e8928932.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.1d6021b6.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.de537cec.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.de537cec.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.7686de59.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7686de59.js.map",
     "static/css/2.150d169a.chunk.css": "/react-portfolio/static/css/2.150d169a.chunk.css",
-    "static/js/2.b4ddc7f3.chunk.js": "/react-portfolio/static/js/2.b4ddc7f3.chunk.js",
-    "static/js/2.b4ddc7f3.chunk.js.map": "/react-portfolio/static/js/2.b4ddc7f3.chunk.js.map",
+    "static/js/2.38525960.chunk.js": "/react-portfolio/static/js/2.38525960.chunk.js",
+    "static/js/2.38525960.chunk.js.map": "/react-portfolio/static/js/2.38525960.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/2.150d169a.chunk.css.map": "/react-portfolio/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.441c6bc9.chunk.css.map": "/react-portfolio/static/css/main.441c6bc9.chunk.css.map",
-    "static/js/2.b4ddc7f3.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.b4ddc7f3.chunk.js.LICENSE.txt",
+    "static/css/main.1d6021b6.chunk.css.map": "/react-portfolio/static/css/main.1d6021b6.chunk.css.map",
+    "static/js/2.38525960.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.38525960.chunk.js.LICENSE.txt",
     "static/media/Joel's_Resume.15b61cf2.pdf": "/react-portfolio/static/media/Joel's_Resume.15b61cf2.pdf",
     "static/media/bear-share.d64a2aa1.png": "/react-portfolio/static/media/bear-share.d64a2aa1.png",
     "static/media/budget-tracker.1d87e37c.png": "/react-portfolio/static/media/budget-tracker.1d87e37c.png",
     "static/media/NavLinks.css": "/react-portfolio/static/media/matrix-background.6df01cdb.png",
     "static/media/employee-directory.b7bf368b.png": "/react-portfolio/static/media/employee-directory.b7bf368b.png",
     "static/media/google-books-search.4cc0bfbc.png": "/react-portfolio/static/media/google-books-search.4cc0bfbc.png",
-    "static/media/joel-selfie.6148d150.jpg": "/react-portfolio/static/media/joel-selfie.6148d150.jpg",
+    "static/media/napaliCoast.12f22fd4.jpg": "/react-portfolio/static/media/napaliCoast.12f22fd4.jpg",
     "static/media/party-perfect.5308485b.png": "/react-portfolio/static/media/party-perfect.5308485b.png",
-    "static/media/the-night-planner.b552537b.png": "/react-portfolio/static/media/the-night-planner.b552537b.png"
+    "static/media/the-night-planner.b552537b.png": "/react-portfolio/static/media/the-night-planner.b552537b.png",
+    "static/media/unsplash_cameronStewart_suzzallo.176a0627.jpg": "/react-portfolio/static/media/unsplash_cameronStewart_suzzallo.176a0627.jpg",
+    "static/media/unsplash_inlyitcs_linkedIn.eb8b3d30.jpg": "/react-portfolio/static/media/unsplash_inlyitcs_linkedIn.eb8b3d30.jpg",
+    "static/media/unsplash_jessBailey_resume.fd7547f8.jpg": "/react-portfolio/static/media/unsplash_jessBailey_resume.fd7547f8.jpg",
+    "static/media/unsplash_martenBjork_airplaneCode.e5d0a078.jpg": "/react-portfolio/static/media/unsplash_martenBjork_airplaneCode.e5d0a078.jpg",
+    "static/media/unsplash_richyGreat_gitHub.4e2516c5.jpg": "/react-portfolio/static/media/unsplash_richyGreat_gitHub.4e2516c5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7686de59.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.b4ddc7f3.chunk.js",
-    "static/css/main.441c6bc9.chunk.css",
-    "static/js/main.e8928932.chunk.js"
+    "static/js/2.38525960.chunk.js",
+    "static/css/main.1d6021b6.chunk.css",
+    "static/js/main.de537cec.chunk.js"
   ]
 }
