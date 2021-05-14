@@ -13,7 +13,6 @@ const Jumbotron = (props) => {
             textAlign: "center",
             opacity: "0.88",
           }}
-          className="jumbotron"
           className={props.classComp}
         >
           {props.children}
