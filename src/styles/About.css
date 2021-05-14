@@ -35,8 +35,7 @@ body {
   letter-spacing: -0.05rem;
 }
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
+/* responsive css */
 
 @media (min-width: 40em) {
   .featurette-heading {
@@ -52,24 +51,32 @@ body {
 
 @media screen and (min-width: 577px) {
   h1 {
-    font-size: 27px;
+    font-size: 40px;
   }
 
-  h6 {
-    font-size: 21px;
+  h2 {
+    font-size: 32px;
   }
 }
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 35px;
+    font-size: 55px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  h1,
+  h1 {
+    font-size: 28px;
+  }
   h2 {
-    font-size: 25px;
+    font-size: 23px;
+  }
+  .btnSize {
+    font-size: 15px;
+    height: 50px;
+    width: 117px;
+    line-height: 16px;
   }
 }
 

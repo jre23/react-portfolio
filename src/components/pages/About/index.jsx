@@ -1,5 +1,6 @@
 import React from "react";
 import Jumbotron from "../../Jumbotron";
+import { Link } from "react-router-dom";
 // import selfie from "../../../images/joel-selfie.jpg";
 import resume from "../../../images/Joel's_Resume.pdf";
 import linkedInImg from "../../../images/unsplash_inlyitcs_linkedIn.jpg";
@@ -11,12 +12,20 @@ const About = () => {
   return (
     <>
       <Jumbotron classComp="jumboAbout">
-        <h2>
-          Hello! I'm Joel, a Full Stack Software Engineer from the University of
-          Washington Coding Boot Camp!
-        </h2>
+        <h1>JOEL ESTRADA</h1>
+        <br />
+        <h2>I'm a Full Stack Software Engineer based out of Seattle, WA.</h2>
+        <br />
+        <Link to="/portfolio">
+          <a
+            href="#"
+            className="btn btn-lg btn-secondary fw-bold border-white bg-secondary btnSize"
+          >
+            Checkout my Portfolio
+          </a>
+        </Link>
       </Jumbotron>
-
+      <br /> <br /> <br />
       <main>
         <div className="container marketing">
           <div className="row">
@@ -48,7 +57,7 @@ const About = () => {
           <div className="row featurette">
             <div className="col-md-7">
               <h2 className="featurette-heading">
-                First featurette heading.{" "}
+                First featurette heading.
                 <span className="text-muted">It’ll blow your mind.</span>
               </h2>
               <p className="lead">
@@ -81,7 +90,7 @@ const About = () => {
           <div className="row featurette">
             <div className="col-md-7 order-md-2">
               <h2 className="featurette-heading">
-                Oh yeah, it’s that good.{" "}
+                Oh yeah, it’s that good.
                 <span className="text-muted">See for yourself.</span>
               </h2>
               <p className="lead">
@@ -115,7 +124,7 @@ const About = () => {
           <div className="row featurette">
             <div className="col-md-7">
               <h2 className="featurette-heading">
-                And lastly, this one.{" "}
+                And lastly, this one.
                 <span className="text-muted">Checkmate.</span>
               </h2>
               <p className="lead">
@@ -148,45 +157,6 @@ const About = () => {
           <hr className="featurette-divider" />
         </div>
       </main>
-
-      {/* <!-- links to linkedin, github, and resume  --> */}
-      <div className="container px-3">
-        <div className="row align-items-center text-center gx-3">
-          <div className="col-12 col-md-4">
-            <div className="p-2 mb-3">
-              <a href="https://www.linkedin.com/in/joelestrada23">
-                <img
-                  className="img-fluid aboutImg"
-                  alt="LinkedIn"
-                  src={linkedInImg}
-                />
-              </a>
-            </div>
-          </div>
-          <div className="col-12 col-md-4">
-            <div className="p-2 mb-3">
-              <a href="https://github.com/jre23">
-                <img
-                  className="img-fluid aboutImg"
-                  alt="GitHub"
-                  src={gitHubImg}
-                />
-              </a>
-            </div>
-          </div>
-          <div className="col-12 col-md-4">
-            <div className="p-2 mb-3">
-              <a href={resume} rel="noreferrer" target="_blank">
-                <img
-                  className="img-fluid aboutImg"
-                  alt="Resume"
-                  src={resumeImg}
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 };
