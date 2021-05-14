@@ -34,8 +34,8 @@ const NavLinks = () => {
               : "navbar navbar-expand-lg navbar-dark"
           }
         >
-          <Link to="/" className="navbar-brand">
-            Joel Estrada
+          <Link to="/" className="navbar-brand ml-lg-5 pl-lg-5 navBarCustom">
+            JRE
           </Link>
           <button
             className="navbar-toggler"
@@ -49,7 +49,10 @@ const NavLinks = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div
+            className="collapse navbar-collapse mr-5 pr-5 navBarCustom"
+            id="navbarTogglerDemo02"
+          >
             <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
               <li className="nav-item">
                 <Link

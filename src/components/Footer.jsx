@@ -1,14 +1,18 @@
 import React from "react";
-import "../styles/Footer.css"
+import { useLocation } from "react-router-dom";
+import "../styles/Footer.css";
 
 const Footer = () => {
+  const location = useLocation();
+
   return (
-    <footer className="text-center py-1">
-      <p className="mb-0 py-2">
-        &copy; Copyright 2020 Joel Estrada
-      </p>
+    <footer
+      className="text-center py-1"
+      style={location.pathname === "/contact" ? { position: "fixed" } : {}}
+    >
+      <p className="mb-0 py-1">&copy; Copyright 2020 Joel Estrada</p>
     </footer>
-  )
-}
+  );
+};
 
 export default Footer;
