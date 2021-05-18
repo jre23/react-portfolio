@@ -38,7 +38,7 @@ a:visited {
 /* hover pseudoclass for when a user hovers the mouse pointer over the link */
 a:hover {
   color: red;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* focus pseudoclass for when a user tabs over the links. When tabbed over, these links will change to the specified font-size and color*/

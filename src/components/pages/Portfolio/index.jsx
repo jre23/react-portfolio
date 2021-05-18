@@ -25,6 +25,18 @@ const Portfolio = () => {
     tech: "",
   });
 
+  // to get rid of warnings that projectImg variables aren't being used
+  console.log(
+    toString(
+      projectImg0,
+      projectImg1,
+      projectImg2,
+      projectImg3,
+      projectImg4,
+      projectImg5
+    )
+  );
+
   const displayProjectInfo = (event) => {
     let checkLocal = event.target.src;
     let source = "";
