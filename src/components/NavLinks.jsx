@@ -8,19 +8,19 @@ const NavLinks = () => {
   return (
     <>
       {/* // <!-- Background image  --> */}
-      <div
+      {/* <div
         className={
           location.pathname === "/"
             ? "bg-index"
             : location.pathname === "/portfolio"
-            ? "bg-portfolio"
+            ? "bg-dark"
             : location.pathname === "/contact"
             ? "bg-contact"
             : "bg-index"
         }
         role="img"
         aria-label="Background image"
-      ></div>
+      ></div> */}
 
       <header>
         <nav
@@ -28,7 +28,7 @@ const NavLinks = () => {
             location.pathname === "/"
               ? "navbar navbar-expand-lg navbar-dark nav-index"
               : location.pathname === "/portfolio"
-              ? "navbar navbar-expand-lg navbar-dark nav-portfolio"
+              ? "navbar navbar-expand-lg navbar-dark bg-dark nav-portfolio"
               : location.pathname === "/contact"
               ? "navbar navbar-expand-lg navbar-dark nav-contact"
               : "navbar navbar-expand-lg navbar-dark"

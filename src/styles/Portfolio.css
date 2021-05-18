@@ -29,8 +29,7 @@ body {
 
 /* portfolio container background color */
 .portfolio-background {
-  background-color: #f4976c;
-  opacity: 0.91;
+  background-color: rgb(52, 58, 64);
 }
 
 /* github links for portfolio */
@@ -70,4 +69,9 @@ a:focus {
 /* active pseudoclass for a link that has been selected (mouse click pressed but not released) */
 a:active {
   color: orange;
+}
+
+.main-edit {
+  width: auto;
+  margin: 0;
 }
