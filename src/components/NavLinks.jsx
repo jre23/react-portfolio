@@ -34,7 +34,7 @@ const NavLinks = () => {
               : "navbar navbar-expand-lg navbar-dark"
           }
         >
-          <Link to="/" className="navbar-brand ml-lg-5 pl-lg-5 navBarCustom">
+          <Link to="/" className="navbar-brand ml-lg-5 pl-lg-5 nav-bar-custom">
             JRE
           </Link>
           <button
@@ -50,7 +50,7 @@ const NavLinks = () => {
           </button>
 
           <div
-            className="collapse navbar-collapse mr-5 pr-5 navBarCustom"
+            className="collapse navbar-collapse mr-5 pr-5 nav-bar-custom"
             id="navbarTogglerDemo02"
           >
             <ul className="navbar-nav ml-auto mt-2 mt-lg-0">

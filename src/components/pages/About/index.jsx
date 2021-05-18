@@ -14,16 +14,16 @@ import "../../../styles/About.css";
 const About = () => {
   return (
     <>
-      <Jumbotron classComp="jumboAbout">
-        <p className="featurette-heading jumboPName">JOEL ESTRADA</p>
-        <p className="featurette-heading text-muted jumboPDescription">
+      <Jumbotron classComp="jumbo-about">
+        <p className="featurette-heading jumbo-name">JOEL ESTRADA</p>
+        <p className="featurette-heading text-muted jumbo-description">
           {" "}
-          I'm a Full Stack Software Engineer based out of Seattle, WA.
+          I'm a Full Stack Software Engineer based out of {"\n"} Seattle, WA.
         </p>
         <Link to="/portfolio">
           <a
             href="/portfolio"
-            className="btn btn-lg btn-secondary fw-bold border-white bg-secondary btnSize"
+            className="btn btn-lg btn-secondary fw-bold border-white bg-secondary btn-size"
           >
             Checkout my Portfolio
           </a>
@@ -41,7 +41,7 @@ const About = () => {
                 <img
                   src={linkedInImg}
                   alt="Bird's eye view of a laptop with a LinkedIn sticker"
-                  className="rounded-circle aboutImg"
+                  className="rounded-circle about-img img-fluid"
                 />
               </a>
               <h2>LinkedIn</h2>
@@ -56,7 +56,7 @@ const About = () => {
                 <img
                   src={gitHubImg}
                   alt="Laptop screen showing GitHub logo"
-                  className="rounded-circle aboutImg"
+                  className="rounded-circle about-img img-fluid"
                 />
               </a>
               <h2>GitHub</h2>
@@ -67,7 +67,7 @@ const About = () => {
                 <img
                   src={resumeImg}
                   alt="Bird's eye views of a laptop and notepad"
-                  className="rounded-circle aboutImg"
+                  className="rounded-circle about-img img-fluid"
                 />
               </a>
               <h2>Resume</h2>
@@ -94,7 +94,7 @@ const About = () => {
               <img
                 src={beachImg}
                 alt="Napali Coast palm tree"
-                className="rounded-circle img-fluid featuretteImg"
+                className="rounded-circle img-fluid featurette-img"
               />
             </div>
           </div>
@@ -118,7 +118,7 @@ const About = () => {
               <img
                 src={airplaneCodeImg}
                 alt="Laptop in an airplane passenger seat"
-                className="rounded-circle  img-fluid featuretteImg"
+                className="rounded-circle  img-fluid featurette-img"
               />
             </div>
           </div>
@@ -144,7 +144,7 @@ const About = () => {
               <img
                 src={suzzalloImg}
                 alt="UW Suzzallo Library"
-                className="rounded-circle  img-fluid featuretteImg"
+                className="rounded-circle  img-fluid featurette-img"
               />
             </div>
           </div>
