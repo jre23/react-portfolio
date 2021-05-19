@@ -1,24 +1,18 @@
 import React from "react";
 
-const styles = {
-  modalBackground: {
-    backgroundColor: "#c1c8e4",
-  },
-};
-
 const PortfolioModal = (props) => {
   return (
     <>
       {/* <!-- modal  --> */}
       <div
-        className="modal fade"
+        className="modal fade text-white"
         id="projectModal"
         tabIndex="-1"
         aria-labelledby="projectModalLabel"
         aria-hidden="true"
       >
         <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content" style={styles.modalBackground}>
+          <div className="modal-content bg-dark">
             <div className="modal-header">
               <h3 className="modal-title" id="project-info-title">
                 {props.clickState.projectTitle}
@@ -72,7 +66,7 @@ const PortfolioModal = (props) => {
             <div className="modal-footer justify-content-center">
               <button
                 type="button"
-                className="btn btn-secondary"
+                className="btn btn-info btn-lg px-4 me-sm-3 fw-bold text-white"
                 data-bs-dismiss="modal"
               >
                 Close

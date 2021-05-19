@@ -10,7 +10,6 @@ import projectImg2 from "../../../images/google-books-search.png";
 import projectImg3 from "../../../images/employee-directory.png";
 import projectImg4 from "../../../images/party-perfect.png";
 import projectImg5 from "../../../images/budget-tracker.png";
-import Jumbotron from "../../Jumbotron";
 
 const Portfolio = () => {
   const [clickState, setClickState] = useState({
@@ -39,15 +38,7 @@ const Portfolio = () => {
   );
 
   const displayProjectInfo = (event) => {
-    let checkLocal = event.target.src;
-    let source = "";
-    if (checkLocal.includes("https")) {
-      // production
-      source = checkLocal.slice(23);
-    } else {
-      // local
-      source = checkLocal.slice(21);
-    }
+    let source = event.target.getAttribute("data-src");
     let dataValue = parseInt(event.target.getAttribute("data-value"));
     setClickState({
       ...projects[dataValue],
@@ -59,10 +50,10 @@ const Portfolio = () => {
     <>
       <div className="bg-dark text-secondary px-4 py-5 text-center">
         <div className="py-5">
-          <h1 className="display-5 fw-bold text-white">
+          <h1 className="display-5 fw-bold text-white mb-4">
             Web Development Portfolio
           </h1>
-          <div className="col-lg-6 mx-auto">
+          <div className="col-8 col-lg-6 mx-auto">
             <p className="fs-5 mb-4">
               Checkout some of the projects I've worked on by clicking on an
               image below! All of these are from the Coding Boot Camp I just
@@ -70,18 +61,14 @@ const Portfolio = () => {
               learning!
             </p>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button
-                type="button"
-                className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+              <a
+                href="https://github.com/jre23"
+                rel="noreferrer"
+                target="_blank"
+                className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold text-white"
               >
-                Custom button
-              </button>
-              <button
-                type="button"
-                className="btn btn-outline-light btn-lg px-4"
-              >
-                Secondary
-              </button>
+                GitHub
+              </a>
             </div>
           </div>
         </div>

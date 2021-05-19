@@ -23,7 +23,7 @@ const About = () => {
         <Link to="/portfolio">
           <a
             href="/portfolio"
-            className="btn btn-lg btn-secondary fw-bold border-white bg-secondary btn-size"
+            className="btn btn-lg btn-secondary fw-bold border-white bg-secondary mt-auto text-white"
           >
             Checkout my Portfolio
           </a>
