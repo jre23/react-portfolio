@@ -38,15 +38,7 @@ const Portfolio = () => {
   );
 
   const displayProjectInfo = (event) => {
-    let checkLocal = event.target.src;
-    let source = "";
-    if (checkLocal.includes("https")) {
-      // production
-      source = checkLocal.slice(23);
-    } else {
-      // local
-      source = checkLocal.slice(21);
-    }
+    let source = event.target.getAttribute("data-src");
     let dataValue = parseInt(event.target.getAttribute("data-value"));
     setClickState({
       ...projects[dataValue],
@@ -56,6 +48,31 @@ const Portfolio = () => {
 
   return (
     <>
+      <div className="bg-dark text-secondary px-4 py-5 text-center">
+        <div className="py-5">
+          <h1 className="display-5 fw-bold text-white mb-4">
+            Web Development Portfolio
+          </h1>
+          <div className="col-8 col-lg-6 mx-auto">
+            <p className="fs-5 mb-4">
+              Checkout some of the projects I've worked on by clicking on an
+              image below! All of these are from the Coding Boot Camp I just
+              completed. I'm working on creating projects of my own to keep on
+              learning!
+            </p>
+            <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <a
+                href="https://github.com/jre23"
+                rel="noreferrer"
+                target="_blank"
+                className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold text-white"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <PortfolioContainer displayProjectInfo={displayProjectInfo} />
       <PortfolioModal clickState={clickState} />
     </>

@@ -12,11 +12,9 @@ const NavLinks = () => {
         className={
           location.pathname === "/"
             ? "bg-index"
-            : location.pathname === "/portfolio"
-            ? "bg-portfolio"
             : location.pathname === "/contact"
             ? "bg-contact"
-            : "bg-index"
+            : "bg-dark"
         }
         role="img"
         aria-label="Background image"
@@ -28,7 +26,7 @@ const NavLinks = () => {
             location.pathname === "/"
               ? "navbar navbar-expand-lg navbar-dark nav-index"
               : location.pathname === "/portfolio"
-              ? "navbar navbar-expand-lg navbar-dark nav-portfolio"
+              ? "navbar navbar-expand-lg navbar-dark bg-dark nav-portfolio"
               : location.pathname === "/contact"
               ? "navbar navbar-expand-lg navbar-dark nav-contact"
               : "navbar navbar-expand-lg navbar-dark"
