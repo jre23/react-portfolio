@@ -1,12 +1,5 @@
 import React from "react";
 
-const styles = {
-  submitBtn: {
-    backgroundColor: "#5680e9",
-    borderRadius: "50%",
-  },
-};
-
 const ContactForm = (props) => {
   return (
     <>
@@ -54,11 +47,7 @@ const ContactForm = (props) => {
             </div>
           </div>
           <div className="pb-4">
-            <button
-              type="submit"
-              className="btn btn-sm py-2 px-2 submit-btn"
-              style={styles.submitBtn}
-            >
+            <button type="submit" className="btn btn-dark btn-sm py-2 px-2">
               Submit
             </button>
           </div>

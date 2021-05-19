@@ -12,7 +12,7 @@ const Footer = () => {
         location.pathname === "/contact"
           ? { position: "fixed", backgroundColor: "#C5CBE3" }
           : location.pathname === "/portfolio"
-          ? { backgroundColor: "#C5CBE3" }
+          ? { backgroundColor: "rgb(52,58,64)" }
           : {}
       }
     >
@@ -22,7 +22,7 @@ const Footer = () => {
           location.pathname === "/contact"
             ? { backgroundColor: "#C5CBE3" }
             : location.pathname === "/portfolio"
-            ? { backgroundColor: "#C5CBE3" }
+            ? { backgroundColor: "rgb(52,58,64)" }
             : {}
         }
       >
