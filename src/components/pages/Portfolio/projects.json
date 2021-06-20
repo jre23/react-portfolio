@@ -12,16 +12,16 @@
     "tech": "JavaScript, Node.js, Express, Handlebars.js, Materialize, MySQL, Git Bash, Heroku, Bcrypt.js, Passport, AWS S3 & Cognito, Multer & MulterS3, Tiny Cloud, SplideJS, JawsDB"
   },
   {
-    "projectTitle": "the-night-planner",
+    "projectTitle": "cartridge-gg",
     "gitHubRepoText": "GitHub Repository",
-    "gitHubRepoLink": "https://github.com/jre23/the-night-planner",
-    "deploymentText": "GitHub Deployment",
-    "deploymentLink": "https://jre23.github.io/the-night-planner",
-    "imgSrc": "/react-portfolio/static/media/the-night-planner.b552537b.png",
-    "imgAlt": "Project #1 The Night Planner screenshot",
-    "dataProject": "the-night-planner",
-    "summary": "Another app I collaborated with class peers on! This app helps users plan out their nights since we're all at home because of COVID! It generates a random cocktail and food recipe to help indecisive people!",
-    "tech": "JavaScript, Bulma, jQuery, Git Bash, GIPHY Developers API, TheMealDB, TheCocktailDB, moment.js"
+    "gitHubRepoLink": "https://github.com/jre23/cartridge-gg",
+    "deploymentText": "Heroku Deployment",
+    "deploymentLink": "https://cartridge-gg.herokuapp.com",
+    "imgSrc": "/react-portfolio/static/media/cartridge-gg.b120c0e0.png",
+    "imgAlt": "Cartridge GG screenshot",
+    "dataProject": "cartridge-gg",
+    "summary": "A React app to act as a hub for the games I've created! These games are super simple but it allows me to keep working on my coding skills!",
+    "tech": "JavaScript, Git Bash, GIPHY Developers API, React, Bootstrap, Express, Node.js, Heroku"
   },
   {
     "projectTitle": "google-books-search",

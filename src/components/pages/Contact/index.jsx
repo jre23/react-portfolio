@@ -78,6 +78,9 @@ const Contact = () => {
                 alt="english bulldog or thank you gif"
                 src={gifState.image}
               ></img>
+              <p>
+                I love dogs! <br /> (especially English Bulldogs)
+              </p>
             </div>
             <br />
           </section>

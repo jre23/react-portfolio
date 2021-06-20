@@ -118,7 +118,7 @@ const About = () => {
               <img
                 src={airplaneCodeImg}
                 alt="Laptop in an airplane passenger seat"
-                className="rounded-circle  img-fluid featurette-img"
+                className="rounded-circle img-fluid featurette-img"
               />
             </div>
           </div>
@@ -144,7 +144,7 @@ const About = () => {
               <img
                 src={suzzalloImg}
                 alt="UW Suzzallo Library"
-                className="rounded-circle  img-fluid featurette-img"
+                className="rounded-circle img-fluid featurette-img"
               />
             </div>
           </div>

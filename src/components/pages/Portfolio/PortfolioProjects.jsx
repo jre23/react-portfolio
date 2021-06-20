@@ -11,7 +11,7 @@ const PortfolioProjects = (props) => {
         data-src={props.imgSrc}
         onClick={props.displayImages.displayProjectInfo}
       >
-        <div className="card card-cover h-100 overflow-hidden text-white rounded-5 shadow-lg bg-dark">
+        <div className="card card-cover h-100 overflow-hidden text-white shadow-lg bg-dark rounded-5">
           <img
             className="card-img"
             src={props.imgSrc}
