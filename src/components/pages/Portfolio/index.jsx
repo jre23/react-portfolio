@@ -5,7 +5,7 @@ import projects from "./projects.json";
 import "../../../styles/Portfolio.css";
 // have to import images for them to show up even though these variables aren't used
 import projectImg0 from "../../../images/bear-share.png";
-import projectImg1 from "../../../images/the-night-planner.png";
+import projectImg1 from "../../../images/cartridge-gg.png";
 import projectImg2 from "../../../images/google-books-search.png";
 import projectImg3 from "../../../images/employee-directory.png";
 import projectImg4 from "../../../images/party-perfect.png";
