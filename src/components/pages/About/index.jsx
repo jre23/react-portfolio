@@ -104,14 +104,15 @@ const About = () => {
           <div className="row featurette">
             <div className="col-md-7 order-md-2">
               <h2 className="featurette-heading">
-                Transitioning Careers.
-                <span className="text-muted"> Aerospace to Software</span>
+                Careers Development.
+                <span className="text-muted"> Aerospace and Software</span>
               </h2>
               <p className="lead">
                 Due to COVID-19 the Aerospace Industry was turned upside down,
-                influencing my decision to switch careers. I recently earned my
-                Certificate of Completion in Full Stack Web Development and am
-                eager to start my career in Software Engineering.
+                influencing my decision to learn something new. I recently
+                earned my Certificate of Completion in Full Stack Web
+                Development to expand my skill set and possibly even switch
+                careers.
               </p>
             </div>
             <div className="col-md-5 order-md-1">
@@ -129,15 +130,13 @@ const About = () => {
             <div className="col-md-7">
               <h2 className="featurette-heading">
                 Lifelong Learner.
-                <span className="text-muted">
-                  {" "}
-                  Looking for the next opportunity.
-                </span>
+                <span className="text-muted"> Grateful.</span>
               </h2>
               <p className="lead">
-                I'm currently searching for entry level Software Engineering
-                positions while continuing to learn new languages and skills.
-                Thanks for reading!
+                I'm currently helping build the road to space! In between work,
+                life, and other hobbies, I like to learn about current trends in
+                Software Engineering and work on personal web apps to keep
+                learning! Thanks for reading!
               </p>
             </div>
             <div className="col-md-5">
