@@ -104,7 +104,7 @@ const About = () => {
           <div className="row featurette">
             <div className="col-md-7 order-md-2">
               <h2 className="featurette-heading">
-                Careers Development.
+                Career Development.
                 <span className="text-muted"> Aerospace and Software</span>
               </h2>
               <p className="lead">
