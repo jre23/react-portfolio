@@ -18,7 +18,8 @@ const About = () => {
         <p className="featurette-heading jumbo-name">JOEL ESTRADA</p>
         <p className="featurette-heading text-muted jumbo-description">
           {" "}
-          I'm a Full Stack Software Engineer based out of <br /> Seattle, WA.
+          I'm an experienced Aerospace Systems Engineer and an entry-level Full
+          Stack Software Engineer based out of <br /> Seattle, WA.
         </p>
         <Link to="/portfolio">
           <a
