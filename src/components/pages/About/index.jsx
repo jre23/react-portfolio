@@ -136,8 +136,8 @@ const About = () => {
               <p className="lead">
                 I'm currently helping build the road to space! In between work,
                 life, and other hobbies, I like to stay up on the latest news in
-                Aerospace and Software. I also like to continue to build and
-                work on personal web apps to keep learning! Thanks for reading!
+                Aerospace and Software. I also like to build and work on
+                personal web apps to keep learning! Thanks for reading!
               </p>
             </div>
             <div className="col-md-5">
